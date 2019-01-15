@@ -11,6 +11,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CertifiedComponent } from './pages/certified/certified.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CertifiedComponent } from './pages/certified/certified.component';
     SkillsComponent,
     PortafolioComponent,
     ContactComponent,
-    CertifiedComponent
+    CertifiedComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
