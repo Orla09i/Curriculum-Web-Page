@@ -3,38 +3,8 @@
     <div class="container">
         <h2 class="section-title wow fadeInUp">Habilidades</h2>
 
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/c.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/c-plus-plus.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/c-sharp.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/puntonet.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/angular.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/nodejs.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/visualstudio.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/html5.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/css3.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/arduino.png"></figure>
-        </a>
-        <a class="column col-xs-6" id="zoomIn">
-            <figure><img src="../../../assets/images/icon/github.png"></figure>
+        <a *ngFor="let icono of _infoServiceIconos.info_icon" class="column col-xs-6" id="zoomIn">
+            <figure><img [src]="icono.link_imagen"></figure>
         </a>
 
         <div class="row">

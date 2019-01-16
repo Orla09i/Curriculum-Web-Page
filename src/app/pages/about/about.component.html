@@ -8,15 +8,15 @@
             <div class="col-md-4 col-md-push-8">
                 <div class="biography">
                     <div class="myphoto">
-                        <img src="assets/images/fototitulo.png" alt="">
+                        <img [src]="_infoService.info.url" alt="">
                     </div>
                     <ul>
-                        <li><strong>Nombre:</strong> Orlando Alejandro Prieto Regalado</li>
-                        <li><strong>Fecha de nacimiento:</strong> 10 Agosto 1992</li>
-                        <li><strong>Ciudad:</strong> Chihuahua, Chihuahua</li>
-                        <li><strong>Nacionalidad:</strong> Méxicano</li>
-                        <li><strong>Teléfono:</strong> 556 128 22 31</li>
-                        <li><strong>Email:</strong> OrlandoPrieto@Outlook.es</li>
+                        <li><strong>Nombre:</strong> {{ _infoService.info.nombre }}</li>
+                        <li><strong>Fecha de nacimiento:</strong> {{ _infoService.info.fecha_nacimiento}}</li>
+                        <li><strong>Ciudad:</strong> {{ _infoService.info.ciudad}}</li>
+                        <li><strong>Nacionalidad:</strong> {{ _infoService.info.nacionalidad}}</li>
+                        <li><strong>Teléfono:</strong> {{ _infoService.info.telefono }}</li>
+                        <li><strong>Email:</strong> {{ _infoService.info.email1 }}</li>
                     </ul>
                 </div>
             </div>
@@ -25,20 +25,16 @@
             <div class="col-md-8 col-md-pull-4">
                 <div class="short-info wow fadeInUp">
                     <h3>Objetivo</h3>
-                    <p>Aportar mis conocimientos en el desarrollo de nuevas aplicaciones web mediante el uso de las tecnologías más usadas dentro del mercado como: ASP.net, C#, Angular, Node.js, SQL Server, WebServices, WCF, WPF, ReportViewer entre otras
-                        más, que facilitan el desarrollo de aplicaciones web.</p>
+                    <p>{{ _infoService.info.objetivo }}</p>
                 </div>
 
                 <div class="short-info wow fadeInUp">
                     <h3>Antecedentes</h3>
-                    <p>He trabajado como desarrollador web y desarrollo de software para algunas empresas, donde mi desempeño se basa en no solo diseñar páginas y sistemas para facilitar procesos, si no que sean con diseños amigables y estilos elegantes,
-                        pensando en la experiencia del cliente con el producto final. Mi pasión por la programación me lleva a ver estos desarrollos más que como un trabajo como un estilo de vida, ya que es algo que tengo presente en mi día a día, ya
-                        sea desarrollando algo o aprendiendo algo nuevo.
-                    </p>
+                    <p>{{ _infoService.info.antecedentes}}</p>
                 </div>
 
                 <div class="my-signature fadeInUp">
-                    <img src="assets/images/miFirma.png" alt="" style="width: 200px; height: 60px;">
+                    <img [src]="_infoService.info.firma_url" alt="" style="width: 200px; height: 60px;">
                 </div>
 
                 <div class="download-button">

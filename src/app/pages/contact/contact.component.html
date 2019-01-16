@@ -10,21 +10,21 @@
                         <i class="fa fa-map-marker"></i>
                         <address>
                         <strong>Dirección</strong>
-                        Chihuahua, Chihuahua, México<br>
+                        {{ _infoService.info.ciudad }}<br>
                         </address>
                     </div>
 
                     <div class="col-md-4">
                         <i class="fa fa-mobile"></i>
                         <div class="contact-number">
-                            <strong>Número de télefono</strong> 5561 282231<br>
+                            <strong>Número de télefono</strong> {{ _infoService.info.telefono }}<br>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <i class="fa fa-envelope"></i>
                         <div class="contact-number">
-                            <strong>E-mail</strong> OrlandoPrieto@outlook.es<br> OrlandoPrietoRegalado@gmail.com
+                            <strong>E-mail</strong> {{ _infoService.info.email1 }} <br> {{ _infoService.info.email2 }}
                         </div>
                     </div>
                 </div>
